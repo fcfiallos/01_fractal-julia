@@ -2,17 +2,18 @@
 #include <fmt/core.h>
 #include <SFML/Graphics.hpp>
 
-
-int main() {
+int main()
+{
     // std::cout<<"Hello,Fractal Julia" << std::endl;
 
     // std::string nombre ="abc";
+    // se usa la libreria fmt para imprimir en consola, no se usara la std::cout
     // fmt::println("Hello, Fractal Julia with fmt library!");
     sf::RenderWindow window(sf::VideoMode({800, 600}), "SFML window");
 
-    // Create a graphical text to display
-    const sf::Font font("fuente.ttf");
-    //const sf:: Font font (Roboto-Italic-VariableFont_wdth,wght_ttf,sizeof(Roboto-Italic-VariableFont_wdth,wght_ttf));
+    //Create a graphical text to display
+    const sf::Font font("arial.ttf");
+    //const sf:: Font font (arial_ttf,sizeof(Roboto-Italic-VariableFont_wdth,wght_ttf));
     sf::Text text(font, "Hello SFML", 50);
     // Start the game loop
     while (window.isOpen())
