@@ -8,7 +8,7 @@
         "CMAKE_TOOLCHAIN_FILE":"c:/tools/vcpkg/scripts/buildsystems/vcpkg.cmake",
         "VCPKG_TARGET_TRIPLET":"x64-mingw-dynamic"
     },
-    "cmake.sourceDirectory": "C:/tools/Proyectos/01_fractal-julia",
+    "cmake.sourceDirectory": "C:/tools/ProgramacionParalela/01_fractal-julia",
     "C_Cpp.errorSquiggles": "disabled",
     "files.associations": {
         "array": "cpp",

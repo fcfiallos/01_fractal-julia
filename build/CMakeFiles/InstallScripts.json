@@ -5,7 +5,7 @@
 	],
 	"InstallScripts" : 
 	[
-		"C:/tools/Proyectos/01_fractal-julia/build/cmake_install.cmake"
+		"C:/tools/ProgramacionParalela/01_fractal-julia/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

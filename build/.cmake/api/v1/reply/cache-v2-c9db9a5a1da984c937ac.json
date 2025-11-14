@@ -43,7 +43,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/tools/Proyectos/01_fractal-julia/build"
+			"value" : "c:/tools/ProgramacionParalela/01_fractal-julia/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -139,7 +139,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
 			"type" : "STRING",
@@ -283,7 +283,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
 			"type" : "STRING",
@@ -575,7 +575,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/tools/Proyectos/01_fractal-julia/build/CMakeFiles/pkgRedirects"
+			"value" : "C:/tools/ProgramacionParalela/01_fractal-julia/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -647,7 +647,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/tools/Proyectos/01_fractal-julia"
+			"value" : "C:/tools/ProgramacionParalela/01_fractal-julia"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1287,10 +1287,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "The CMake toolchain file"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "c:/tools/vcpkg/scripts/buildsystems/vcpkg.cmake"
 		},
 		{
@@ -1319,7 +1319,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/tools/Proyectos/01_fractal-julia/build"
+			"value" : "C:/tools/ProgramacionParalela/01_fractal-julia/build"
 		},
 		{
 			"name" : "FractalJulia_IS_TOP_LEVEL",
@@ -1343,7 +1343,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/tools/Proyectos/01_fractal-julia"
+			"value" : "C:/tools/ProgramacionParalela/01_fractal-julia"
 		},
 		{
 			"name" : "SFML_DIR",

@@ -12,7 +12,7 @@ build fractal_julia.exe: phony Release/fractal_julia.exe
 
 
 #############################################
-# Folder: C:/tools/Proyectos/01_fractal-julia/build
+# Folder: C:/tools/ProgramacionParalela/01_fractal-julia/build
 
 build all: phony all$:Release
 

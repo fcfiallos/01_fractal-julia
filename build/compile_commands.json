@@ -1,38 +1,56 @@
 [
 {
-  "directory": "C:/tools/Proyectos/01_fractal-julia/build",
-  "command": "c:\\tools\\mingw64\\bin\\g++.exe -DFMT_SHARED -DCMAKE_INTDIR=\\\"Debug\\\" -isystem C:/tools/vcpkg/installed/x64-mingw-dynamic/include -g -o CMakeFiles\\fractal_julia.dir\\Debug\\main.cpp.obj -c C:\\tools\\Proyectos\\01_fractal-julia\\main.cpp",
-  "file": "C:/tools/Proyectos/01_fractal-julia/main.cpp",
-  "output": "C:/tools/Proyectos/01_fractal-julia/build/CMakeFiles/fractal_julia.dir/Debug/main.cpp.obj"
+  "directory": "C:/tools/ProgramacionParalela/01_fractal-julia/build",
+  "command": "c:\\tools\\mingw64\\bin\\g++.exe -DFMT_SHARED -DCMAKE_INTDIR=\\\"Debug\\\" -isystem C:/tools/vcpkg/installed/x64-mingw-dynamic/include -g -o CMakeFiles\\fractal_julia.dir\\Debug\\main.cpp.obj -c C:\\tools\\ProgramacionParalela\\01_fractal-julia\\main.cpp",
+  "file": "C:/tools/ProgramacionParalela/01_fractal-julia/main.cpp",
+  "output": "C:/tools/ProgramacionParalela/01_fractal-julia/build/CMakeFiles/fractal_julia.dir/Debug/main.cpp.obj"
 },
 {
-  "directory": "C:/tools/Proyectos/01_fractal-julia/build",
-  "command": "c:\\tools\\mingw64\\bin\\g++.exe -DFMT_SHARED -DCMAKE_INTDIR=\\\"Debug\\\" -isystem C:/tools/vcpkg/installed/x64-mingw-dynamic/include -g -o CMakeFiles\\fractal_julia.dir\\Debug\\fractal_serial.cpp.obj -c C:\\tools\\Proyectos\\01_fractal-julia\\fractal_serial.cpp",
-  "file": "C:/tools/Proyectos/01_fractal-julia/fractal_serial.cpp",
-  "output": "C:/tools/Proyectos/01_fractal-julia/build/CMakeFiles/fractal_julia.dir/Debug/fractal_serial.cpp.obj"
+  "directory": "C:/tools/ProgramacionParalela/01_fractal-julia/build",
+  "command": "c:\\tools\\mingw64\\bin\\g++.exe -DFMT_SHARED -DCMAKE_INTDIR=\\\"Debug\\\" -isystem C:/tools/vcpkg/installed/x64-mingw-dynamic/include -g -o CMakeFiles\\fractal_julia.dir\\Debug\\fractal_serial.cpp.obj -c C:\\tools\\ProgramacionParalela\\01_fractal-julia\\fractal_serial.cpp",
+  "file": "C:/tools/ProgramacionParalela/01_fractal-julia/fractal_serial.cpp",
+  "output": "C:/tools/ProgramacionParalela/01_fractal-julia/build/CMakeFiles/fractal_julia.dir/Debug/fractal_serial.cpp.obj"
 },
 {
-  "directory": "C:/tools/Proyectos/01_fractal-julia/build",
-  "command": "c:\\tools\\mingw64\\bin\\g++.exe -DFMT_SHARED -DCMAKE_INTDIR=\\\"Release\\\" -isystem C:/tools/vcpkg/installed/x64-mingw-dynamic/include -O3 -DNDEBUG -o CMakeFiles\\fractal_julia.dir\\Release\\main.cpp.obj -c C:\\tools\\Proyectos\\01_fractal-julia\\main.cpp",
-  "file": "C:/tools/Proyectos/01_fractal-julia/main.cpp",
-  "output": "C:/tools/Proyectos/01_fractal-julia/build/CMakeFiles/fractal_julia.dir/Release/main.cpp.obj"
+  "directory": "C:/tools/ProgramacionParalela/01_fractal-julia/build",
+  "command": "c:\\tools\\mingw64\\bin\\g++.exe -DFMT_SHARED -DCMAKE_INTDIR=\\\"Debug\\\" -isystem C:/tools/vcpkg/installed/x64-mingw-dynamic/include -g -o CMakeFiles\\fractal_julia.dir\\Debug\\palette.cpp.obj -c C:\\tools\\ProgramacionParalela\\01_fractal-julia\\palette.cpp",
+  "file": "C:/tools/ProgramacionParalela/01_fractal-julia/palette.cpp",
+  "output": "C:/tools/ProgramacionParalela/01_fractal-julia/build/CMakeFiles/fractal_julia.dir/Debug/palette.cpp.obj"
 },
 {
-  "directory": "C:/tools/Proyectos/01_fractal-julia/build",
-  "command": "c:\\tools\\mingw64\\bin\\g++.exe -DFMT_SHARED -DCMAKE_INTDIR=\\\"Release\\\" -isystem C:/tools/vcpkg/installed/x64-mingw-dynamic/include -O3 -DNDEBUG -o CMakeFiles\\fractal_julia.dir\\Release\\fractal_serial.cpp.obj -c C:\\tools\\Proyectos\\01_fractal-julia\\fractal_serial.cpp",
-  "file": "C:/tools/Proyectos/01_fractal-julia/fractal_serial.cpp",
-  "output": "C:/tools/Proyectos/01_fractal-julia/build/CMakeFiles/fractal_julia.dir/Release/fractal_serial.cpp.obj"
+  "directory": "C:/tools/ProgramacionParalela/01_fractal-julia/build",
+  "command": "c:\\tools\\mingw64\\bin\\g++.exe -DFMT_SHARED -DCMAKE_INTDIR=\\\"Release\\\" -isystem C:/tools/vcpkg/installed/x64-mingw-dynamic/include -O3 -DNDEBUG -o CMakeFiles\\fractal_julia.dir\\Release\\main.cpp.obj -c C:\\tools\\ProgramacionParalela\\01_fractal-julia\\main.cpp",
+  "file": "C:/tools/ProgramacionParalela/01_fractal-julia/main.cpp",
+  "output": "C:/tools/ProgramacionParalela/01_fractal-julia/build/CMakeFiles/fractal_julia.dir/Release/main.cpp.obj"
 },
 {
-  "directory": "C:/tools/Proyectos/01_fractal-julia/build",
-  "command": "c:\\tools\\mingw64\\bin\\g++.exe -DFMT_SHARED -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -isystem C:/tools/vcpkg/installed/x64-mingw-dynamic/include -O2 -g -DNDEBUG -o CMakeFiles\\fractal_julia.dir\\RelWithDebInfo\\main.cpp.obj -c C:\\tools\\Proyectos\\01_fractal-julia\\main.cpp",
-  "file": "C:/tools/Proyectos/01_fractal-julia/main.cpp",
-  "output": "C:/tools/Proyectos/01_fractal-julia/build/CMakeFiles/fractal_julia.dir/RelWithDebInfo/main.cpp.obj"
+  "directory": "C:/tools/ProgramacionParalela/01_fractal-julia/build",
+  "command": "c:\\tools\\mingw64\\bin\\g++.exe -DFMT_SHARED -DCMAKE_INTDIR=\\\"Release\\\" -isystem C:/tools/vcpkg/installed/x64-mingw-dynamic/include -O3 -DNDEBUG -o CMakeFiles\\fractal_julia.dir\\Release\\fractal_serial.cpp.obj -c C:\\tools\\ProgramacionParalela\\01_fractal-julia\\fractal_serial.cpp",
+  "file": "C:/tools/ProgramacionParalela/01_fractal-julia/fractal_serial.cpp",
+  "output": "C:/tools/ProgramacionParalela/01_fractal-julia/build/CMakeFiles/fractal_julia.dir/Release/fractal_serial.cpp.obj"
 },
 {
-  "directory": "C:/tools/Proyectos/01_fractal-julia/build",
-  "command": "c:\\tools\\mingw64\\bin\\g++.exe -DFMT_SHARED -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -isystem C:/tools/vcpkg/installed/x64-mingw-dynamic/include -O2 -g -DNDEBUG -o CMakeFiles\\fractal_julia.dir\\RelWithDebInfo\\fractal_serial.cpp.obj -c C:\\tools\\Proyectos\\01_fractal-julia\\fractal_serial.cpp",
-  "file": "C:/tools/Proyectos/01_fractal-julia/fractal_serial.cpp",
-  "output": "C:/tools/Proyectos/01_fractal-julia/build/CMakeFiles/fractal_julia.dir/RelWithDebInfo/fractal_serial.cpp.obj"
+  "directory": "C:/tools/ProgramacionParalela/01_fractal-julia/build",
+  "command": "c:\\tools\\mingw64\\bin\\g++.exe -DFMT_SHARED -DCMAKE_INTDIR=\\\"Release\\\" -isystem C:/tools/vcpkg/installed/x64-mingw-dynamic/include -O3 -DNDEBUG -o CMakeFiles\\fractal_julia.dir\\Release\\palette.cpp.obj -c C:\\tools\\ProgramacionParalela\\01_fractal-julia\\palette.cpp",
+  "file": "C:/tools/ProgramacionParalela/01_fractal-julia/palette.cpp",
+  "output": "C:/tools/ProgramacionParalela/01_fractal-julia/build/CMakeFiles/fractal_julia.dir/Release/palette.cpp.obj"
+},
+{
+  "directory": "C:/tools/ProgramacionParalela/01_fractal-julia/build",
+  "command": "c:\\tools\\mingw64\\bin\\g++.exe -DFMT_SHARED -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -isystem C:/tools/vcpkg/installed/x64-mingw-dynamic/include -O2 -g -DNDEBUG -o CMakeFiles\\fractal_julia.dir\\RelWithDebInfo\\main.cpp.obj -c C:\\tools\\ProgramacionParalela\\01_fractal-julia\\main.cpp",
+  "file": "C:/tools/ProgramacionParalela/01_fractal-julia/main.cpp",
+  "output": "C:/tools/ProgramacionParalela/01_fractal-julia/build/CMakeFiles/fractal_julia.dir/RelWithDebInfo/main.cpp.obj"
+},
+{
+  "directory": "C:/tools/ProgramacionParalela/01_fractal-julia/build",
+  "command": "c:\\tools\\mingw64\\bin\\g++.exe -DFMT_SHARED -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -isystem C:/tools/vcpkg/installed/x64-mingw-dynamic/include -O2 -g -DNDEBUG -o CMakeFiles\\fractal_julia.dir\\RelWithDebInfo\\fractal_serial.cpp.obj -c C:\\tools\\ProgramacionParalela\\01_fractal-julia\\fractal_serial.cpp",
+  "file": "C:/tools/ProgramacionParalela/01_fractal-julia/fractal_serial.cpp",
+  "output": "C:/tools/ProgramacionParalela/01_fractal-julia/build/CMakeFiles/fractal_julia.dir/RelWithDebInfo/fractal_serial.cpp.obj"
+},
+{
+  "directory": "C:/tools/ProgramacionParalela/01_fractal-julia/build",
+  "command": "c:\\tools\\mingw64\\bin\\g++.exe -DFMT_SHARED -DCMAKE_INTDIR=\\\"RelWithDebInfo\\\" -isystem C:/tools/vcpkg/installed/x64-mingw-dynamic/include -O2 -g -DNDEBUG -o CMakeFiles\\fractal_julia.dir\\RelWithDebInfo\\palette.cpp.obj -c C:\\tools\\ProgramacionParalela\\01_fractal-julia\\palette.cpp",
+  "file": "C:/tools/ProgramacionParalela/01_fractal-julia/palette.cpp",
+  "output": "C:/tools/ProgramacionParalela/01_fractal-julia/build/CMakeFiles/fractal_julia.dir/RelWithDebInfo/palette.cpp.obj"
 }
 ]
