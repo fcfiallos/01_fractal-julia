@@ -5,7 +5,9 @@ project(FractalJulia)
 find_package(fmt CONFIG REQUIRED)
 find_package(SFML COMPONENTS Network Graphics Window Audio System CONFIG REQUIRED)
 
-add_executable(fractal_julia main.cpp)
+add_executable(fractal_julia main.cpp
+fractal_serial.cpp
+)
 
 target_link_libraries(fractal_julia PRIVATE 
     fmt::fmt
