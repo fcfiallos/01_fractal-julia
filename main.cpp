@@ -5,6 +5,7 @@
 
 #include "arial.ttf.h"
 #include "fractal_serial.h"
+#include "fractal_simd.h"
 // para evitar que se copie dos veces la variable se añade un condicional en el .h
 // el menor <> busca en el sistema y mientas el "" busca en el proyecto
 #ifdef _WIN32
@@ -30,7 +31,8 @@ uint32_t *pixel_buffer = nullptr; // WXH este es para la escala de grises
 enum class runtime_type
 {
     SERIAL_1 = 0,
-    SERIAL_2
+    SERIAL_2,
+    SIMD
 
 };
 
@@ -40,7 +42,6 @@ int main()
     pixel_buffer = new uint32_t[WIDTH * HEIGHT];
 
     runtime_type r_type = runtime_type::SERIAL_1;
-    julia_serial1(x_min, y_min, x_max, y_max, WIDTH, HEIGHT, pixel_buffer);
 
     // inicializar el SFML
     // los :: hace estatica la varibles y los otros convierte un namespace para hacer un paquete en java com.ejercicio
@@ -75,7 +76,7 @@ int main()
 
     // FPS
     int frame = 0;
-    int fps = 0; //cuantos mas fps aumenta signifa que dibuja mucho mas rapido 
+    int fps = 0; // cuantos mas fps aumenta signifa que dibuja mucho mas rapido
     sf::Clock clockFrames;
 
     while (window.isOpen())
@@ -109,10 +110,13 @@ int main()
                 case sf::Keyboard::Scan::Num2:
                     r_type = runtime_type::SERIAL_2;
                     break;
+                case sf::Keyboard::Scan::Num3:
+                    r_type = runtime_type::SIMD;
+                    break;
                 }
             }
         }
-        std::string mode="";
+        std::string mode = "";
         if (r_type == runtime_type::SERIAL_1)
         {
 
@@ -124,9 +128,12 @@ int main()
             mode = "Serial 2";
             julia_serial_2(x_min, y_min, x_max, y_max, WIDTH, HEIGHT, pixel_buffer);
         }
+        else if (r_type == runtime_type::SIMD)
+        {
+            mode = "SIMD";
+            julia_simd(x_min, y_min, x_max, y_max, WIDTH, HEIGHT, pixel_buffer);
+        }
 
-
-        julia_serial1(x_min, y_min, x_max, y_max, WIDTH, HEIGHT, pixel_buffer);
         texture.update((const uint8_t *)pixel_buffer);
 
         // contar FPS
