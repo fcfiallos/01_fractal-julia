@@ -2,11 +2,12 @@
 #include <complex> //nos permite trabajar con complejos
 #include <fmt/core.h>
 #include <SFML/Graphics.hpp>
+#include <omp.h>
 
 #include "arial.ttf.h"
 #include "fractal_serial.h"
 #include "fractal_simd.h"
-// para evitar que se copie dos veces la variable se añade un condicional en el .h
+#include "fractal_omp.h"
 // el menor <> busca en el sistema y mientas el "" busca en el proyecto
 #ifdef _WIN32
 #include <windows.h>
@@ -32,12 +33,24 @@ enum class runtime_type
 {
     SERIAL_1 = 0,
     SERIAL_2,
-    SIMD
-
+    SIMD,
+    OPENMP_REGIONES,
+    OPENMP_FOR,
+    OPENMP_For_Simd
 };
 
 int main()
 {
+    int thread_count ;
+
+    #pragma omp parallel
+    {
+        #pragma omp master
+        {
+            thread_count = omp_get_num_threads();
+            std::cout << "Número de hilos: " << thread_count << std::endl;
+        }
+    }
     // - inicializar
     pixel_buffer = new uint32_t[WIDTH * HEIGHT];
 
@@ -68,7 +81,7 @@ int main()
     text.setPosition({10, 10});
     text.setStyle(sf::Text::Bold);
 
-    std::string options = "OPTIONS: [1] Serial 1 [2] Serial 2 ";
+    std::string options = "OPTIONS: [1] Serial 1 [2] Serial 2 [3] SIMD [4] OpenMP Regiones [5] OpenMP For [6] OpenMP For SIMD | UP/DOWN: Change Iterations";
     sf::Text textOptions(font, options, 24);
     textOptions.setFillColor(sf::Color::White);
     textOptions.setStyle(sf::Text::Bold);
@@ -113,6 +126,15 @@ int main()
                 case sf::Keyboard::Scan::Num3:
                     r_type = runtime_type::SIMD;
                     break;
+                case sf::Keyboard::Scan::Num4:
+                    r_type = runtime_type::OPENMP_REGIONES;
+                    break;
+                case sf::Keyboard::Scan::Num5:
+                    r_type = runtime_type::OPENMP_FOR;
+                    break;
+                case sf::Keyboard::Scan::Num6:
+                    r_type = runtime_type::OPENMP_For_Simd;
+                    break;
                 }
             }
         }
@@ -132,6 +154,21 @@ int main()
         {
             mode = "SIMD";
             julia_simd(x_min, y_min, x_max, y_max, WIDTH, HEIGHT, pixel_buffer);
+        }
+        else if (r_type == runtime_type::OPENMP_REGIONES)
+        {
+            mode =  fmt::format("OPENMP REGIONES (Threads: {})", thread_count);
+            julia_openmp_regiones(x_min, y_min, x_max, y_max, WIDTH, HEIGHT, pixel_buffer);
+        }
+        else if (r_type == runtime_type::OPENMP_FOR)
+        {
+            mode =  fmt::format("OPENMP FOR (Threads: {})", thread_count);
+            julia_openmp_for(x_min, y_min, x_max, y_max, WIDTH, HEIGHT, pixel_buffer);
+        }
+        else if (r_type == runtime_type::OPENMP_For_Simd)
+        {
+            mode =  fmt::format("OPENMP FOR SIMD (Threads: {})", thread_count);
+            julia_openmp_for_simd(x_min, y_min, x_max, y_max, WIDTH, HEIGHT, pixel_buffer);
         }
 
         texture.update((const uint8_t *)pixel_buffer);

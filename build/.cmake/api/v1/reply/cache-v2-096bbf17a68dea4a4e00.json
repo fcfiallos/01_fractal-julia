@@ -139,7 +139,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
 			"type" : "STRING",
@@ -283,7 +283,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
 			"type" : "STRING",
@@ -1287,10 +1287,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "The CMake toolchain file"
 				}
 			],
-			"type" : "STRING",
+			"type" : "FILEPATH",
 			"value" : "c:/tools/vcpkg/scripts/buildsystems/vcpkg.cmake"
 		},
 		{
